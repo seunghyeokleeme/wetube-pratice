@@ -4,6 +4,7 @@
   "description": "Cloning Youtube with Vanlia and NodeJS",
   "author": "Devinan",
   "dependencies": {
+    "@babel/node": "^7.5.5",
     "express": "^4.17.1"
   },
   "scripts": {

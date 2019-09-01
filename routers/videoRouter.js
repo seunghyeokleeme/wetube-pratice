@@ -10,7 +10,6 @@ import {
 
 const viedoRouter = express.Router();
 
-viedoRouter.get(routes.videos, videos);
 viedoRouter.get(routes.upload, upload);
 viedoRouter.get(routes.videoDetail, videoDetail);
 viedoRouter.get(routes.editVideo, editVideo);

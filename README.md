@@ -5,7 +5,8 @@ Cloning Youtube with Vanlia and NodeJS
 ## Pages:
 
 - [ ] Home
-- [ ] Join
+- [x] Join
+- [x] Login
 - [x] Search
 - [ ] User Detail
 - [ ] Edit Profile

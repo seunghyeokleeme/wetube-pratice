@@ -1,54 +1,14 @@
-export const videos = [
-  {
-    id: 57332,
-    title: "Video awsome",
-    description: "This is something I love",
-    views: 204,
-    videoFile:
-      "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
-    creator: {
-      id: 1,
-      name: "devinan",
-      email: "devinan.hr@gmail.com"
-    }
-  },
-  {
-    id: 22222,
-    title: "Video super",
-    description: "This is something I love",
-    views: 204,
-    videoFile:
-      "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
-    creator: {
-      id: 1,
-      name: "devinan",
-      email: "devinan.hr@gmail.com"
-    }
-  },
-  {
-    id: 439493,
-    title: "Video nice",
-    description: "This is something I love",
-    views: 204,
-    videoFile:
-      "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
-    creator: {
-      id: 1,
-      name: "devinan",
-      email: "devinan.hr@gmail.com"
-    }
-  },
-  {
-    id: 111111,
-    title: "Video perfect",
-    description: "This is something I love",
-    views: 204,
-    videoFile:
-      "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
-    creator: {
-      id: 1,
-      name: "devinan",
-      email: "devinan.hr@gmail.com"
-    }
-  }
-];
+import mongoose from "mongoose";
+
+mongoose.connect("mongodb://localhost:27017/wetube-v2", {
+  useNewUrlParser: true,
+  useFindAndModify: false
+});
+
+const db = mongoose.connection;
+
+const handleOpen = () => console.log("✅  Connected to DB");
+const handleError = error => console.log(`❌ Error on DB Connection:${error}`);
+
+db.once("open", handleOpen);
+db.on("error", handleError);

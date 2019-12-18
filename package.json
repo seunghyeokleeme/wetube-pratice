@@ -1,0 +1,11 @@
+{
+  "name": "wetube-v4.2.0",
+  "version": "1.0.0",
+  "description": "Cloning youtube with Vanilia and NodeJS",
+  "main": "index.js",
+  "author": "Devinan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

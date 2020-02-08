@@ -1,0 +1,11 @@
+{
+  "name": "wetube-v5",
+  "version": "1.0.0",
+  "description": "Cloning Youtube with Vanlia and Node",
+  "main": "index.js",
+  "author": "Devinan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
